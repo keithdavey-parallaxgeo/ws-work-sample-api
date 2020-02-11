@@ -26,15 +26,15 @@ const pool = new pg.Pool();
 let config = {
   'routeLimits': {
     '/': 10,
-    '/events/hourly': 10,
-    '/events/daily': 10,
-    '/stats/hourly': 10,
-    '/stats/daily': 10,
-    '/poi': 10,
-    '/poi/events/hourly': 10,
-    '/poi/events/daily': 10,
-    '/poi/stats/hourly': 10,
-    '/poi/stats/daily': 10
+    '/events/hourly': 1000,
+    '/events/daily': 1000,
+    '/stats/hourly': 1000,
+    '/stats/daily': 1000,
+    '/poi': 1000,
+    '/poi/events/hourly': 1000,
+    '/poi/events/daily': 1000,
+    '/poi/stats/hourly': 1000,
+    '/poi/stats/daily': 1000
   },
   'clusterMode': false,
   'connectionString': 'redis://127.0.0.1:6379/0'
